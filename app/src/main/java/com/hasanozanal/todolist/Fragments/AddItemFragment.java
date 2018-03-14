@@ -72,8 +72,7 @@ public class AddItemFragment extends Fragment {
                 }
                 else {
                     SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-                    Set<String> set;
-                    set = preferences.getStringSet("list", new ArraySet<String>());
+                    Set<String> set = preferences.getStringSet("list", new ArraySet<String>());
                     set.add(editTextDetails);
                     SharedPreferences.Editor editor =preferences.edit();
                     editor.putStringSet("list",set);
