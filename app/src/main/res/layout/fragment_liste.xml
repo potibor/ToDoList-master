@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hasanozanal.todolist.Fragments.ListelemeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/addactionbarID"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/actionbarTxtID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Task To DO"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/addBtnID"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:background="@android:drawable/ic_input_add" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listviewItemsID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000"
+            android:dividerHeight="1dp"
+            android:layout_below="@+id/addactionbarID">
+        </ListView>
+
+    </RelativeLayout>
+
+</FrameLayout>
